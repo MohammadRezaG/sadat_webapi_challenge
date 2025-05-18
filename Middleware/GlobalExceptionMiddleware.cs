@@ -19,7 +19,7 @@ namespace Sadas_test.Middleware
         {
             try
             {
-                await _next(context); // Proceed to next middleware
+                await _next(context);
             }
             catch (Exception ex)
             {
