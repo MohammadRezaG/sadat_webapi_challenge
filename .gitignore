@@ -1,0 +1,47 @@
+# Ignore build output
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Ignore Rider and VS Code settings
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore compiled DLLs and other binaries
+*.dll
+*.exe
+*.pdb
+*.cache
+*.msi
+*.nupkg
+
+# Ignore test results
+TestResults/
+*.trx
+*.coverage
+
+# Ignore publish artifacts
+publish/
+*.zip
+*.tar.gz
+
+# Logs — keep your logs, so comment this if you want to include Logs/
+# Logs/
+!Logs/
+
+# Optional: ignore secrets but keep base config
+appsettings.Development.json
+# Keep base config
+!appsettings.json
+
+# Ignore VS-specific files
+*.dbmdl
+*.bak
+*.log
+*.vspscc
+.vs/

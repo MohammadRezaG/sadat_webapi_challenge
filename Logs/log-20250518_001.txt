@@ -1,0 +1,179 @@
+[19:09:30 ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5208: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[19:09:52 INF] Now listening on: http://localhost:5208
+[19:09:52 INF] Application started. Press Ctrl+C to shut down.
+[19:09:52 INF] Hosting environment: Development
+[19:09:52 INF] Content root path: D:\Source\repos\Tests\net core\Sadas test
+[19:10:03 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[19:10:03 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[19:10:03 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[19:10:03 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[19:10:03 INF] Received HTTP response headers after 709.8142ms - 200
+[19:10:03 INF] Received HTTP response headers after 827.7343ms - 200
+[19:10:03 INF] End processing HTTP request after 716.753ms - 200
+[19:10:03 INF] End processing HTTP request after 838.0793ms - 200
+[19:10:04 INF] [Request] GET /api/getprice/iPhone%2015 responded 200 in 1398ms
+[20:01:47 INF] Now listening on: http://localhost:5208
+[20:01:47 INF] Application started. Press Ctrl+C to shut down.
+[20:01:47 INF] Hosting environment: Development
+[20:01:47 INF] Content root path: D:\Source\repos\Tests\net core\Sadas test
+[20:01:49 INF] [Request] GET / responded 404 in 0ms
+[20:02:11 INF] [Request] GET /swager responded 404 in 0ms
+[20:05:36 INF] Now listening on: http://localhost:5208
+[20:05:36 INF] Application started. Press Ctrl+C to shut down.
+[20:05:36 INF] Hosting environment: Development
+[20:05:36 INF] Content root path: D:\Source\repos\Tests\net core\Sadas test
+[20:06:01 INF] [Request] GET /favicon.ico responded 404 in 0ms
+[20:06:16 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:16 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:16 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:16 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:17 INF] Received HTTP response headers after 846.612ms - 404
+[20:06:17 INF] Received HTTP response headers after 816.4644ms - 404
+[20:06:17 INF] End processing HTTP request after 853.2488ms - 404
+[20:06:17 INF] End processing HTTP request after 822.6303ms - 404
+[20:06:17 INF] [Request] GET /api/GetPrice/%7BproductName%7D responded 200 in 1112ms
+[20:06:29 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:29 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:29 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:29 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:29 INF] Received HTTP response headers after 205.201ms - 404
+[20:06:29 INF] End processing HTTP request after 207.8123ms - 404
+[20:06:29 INF] Received HTTP response headers after 212.1289ms - 404
+[20:06:29 INF] End processing HTTP request after 214.4814ms - 404
+[20:06:29 INF] [Request] GET /api/GetPrice/%7BproductName%7D responded 200 in 253ms
+[20:06:30 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:30 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:30 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:30 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:31 INF] Received HTTP response headers after 209.1602ms - 404
+[20:06:31 INF] End processing HTTP request after 211.7256ms - 404
+[20:06:31 INF] Received HTTP response headers after 204.2541ms - 404
+[20:06:31 INF] End processing HTTP request after 206.691ms - 404
+[20:06:31 INF] [Request] GET /api/GetPrice/%7BproductName%7D responded 200 in 237ms
+[20:06:47 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:47 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:06:47 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:47 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:06:47 INF] Received HTTP response headers after 210.087ms - 404
+[20:06:47 INF] Received HTTP response headers after 205.384ms - 404
+[20:06:47 INF] End processing HTTP request after 216.9734ms - 404
+[20:06:47 INF] End processing HTTP request after 207.8244ms - 404
+[20:06:47 INF] [Request] GET /api/GetPrice/%7BproductName%7D responded 200 in 230ms
+[20:07:15 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:07:15 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:07:15 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:07:15 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:07:16 INF] Received HTTP response headers after 211.1258ms - 200
+[20:07:16 INF] End processing HTTP request after 213.0849ms - 200
+[20:07:16 INF] Received HTTP response headers after 224.632ms - 200
+[20:07:16 INF] End processing HTTP request after 226.7673ms - 200
+[20:07:16 INF] [Request] GET /api/getprice/iPhone%2015 responded 200 in 250ms
+[20:08:10 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:08:10 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:08:10 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:08:10 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:08:10 INF] Received HTTP response headers after 197.8215ms - 404
+[20:08:10 INF] End processing HTTP request after 200.6432ms - 404
+[20:08:10 INF] Received HTTP response headers after 213.0954ms - 404
+[20:08:10 INF] End processing HTTP request after 215.6075ms - 404
+[20:08:10 INF] [Request] GET /api/GetPrice/%7BproductName%7D responded 200 in 249ms
+[20:08:38 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:08:38 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:08:38 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:08:38 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:08:38 INF] Received HTTP response headers after 636.727ms - 404
+[20:08:38 INF] Received HTTP response headers after 627.0938ms - 200
+[20:08:38 INF] End processing HTTP request after 649.0989ms - 404
+[20:08:38 INF] End processing HTTP request after 630.0534ms - 200
+[20:08:38 INF] [Request] GET /api/GetPrice/Electronic%20Plastic%20Table responded 200 in 689ms
+[20:09:10 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:10 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:10 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:10 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:10 INF] Received HTTP response headers after 195.8612ms - 200
+[20:09:10 INF] End processing HTTP request after 198.1534ms - 200
+[20:09:10 INF] Received HTTP response headers after 197.0331ms - 404
+[20:09:10 INF] End processing HTTP request after 199.1693ms - 404
+[20:09:10 INF] [Request] GET /api/GetPrice/Sleek%20Bronze%20Soap responded 200 in 227ms
+[20:09:38 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:38 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:38 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:38 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:38 INF] Received HTTP response headers after 217.4971ms - 404
+[20:09:38 INF] End processing HTTP request after 220.1404ms - 404
+[20:09:38 INF] Received HTTP response headers after 223.658ms - 404
+[20:09:38 INF] End processing HTTP request after 226.248ms - 404
+[20:09:38 INF] [Request] GET /api/GetPrice/s%2024 responded 200 in 262ms
+[20:09:48 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:48 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:48 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:48 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:48 INF] Received HTTP response headers after 212.1628ms - 200
+[20:09:48 INF] End processing HTTP request after 215.2151ms - 200
+[20:09:48 INF] Received HTTP response headers after 210.8334ms - 404
+[20:09:48 INF] End processing HTTP request after 213.2773ms - 404
+[20:09:48 INF] [Request] GET /api/GetPrice/s24 responded 200 in 259ms
+[20:09:51 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:51 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:09:51 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:51 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:09:52 INF] Received HTTP response headers after 213.5709ms - 200
+[20:09:52 INF] End processing HTTP request after 215.735ms - 200
+[20:09:52 INF] Received HTTP response headers after 210.0101ms - 404
+[20:09:52 INF] End processing HTTP request after 213.2141ms - 404
+[20:09:52 INF] [Request] GET /api/GetPrice/s24 responded 200 in 240ms
+[20:10:04 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:04 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:04 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:04 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:04 INF] Received HTTP response headers after 213.1952ms - 404
+[20:10:04 INF] End processing HTTP request after 216.0044ms - 404
+[20:10:04 INF] Received HTTP response headers after 209.7031ms - 404
+[20:10:04 INF] End processing HTTP request after 212.07ms - 404
+[20:10:04 INF] [Request] GET /api/GetPrice/siPhone%2015 responded 200 in 251ms
+[20:10:06 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:06 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:06 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:06 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:07 INF] Received HTTP response headers after 229.127ms - 404
+[20:10:07 INF] End processing HTTP request after 231.0549ms - 404
+[20:10:07 INF] Received HTTP response headers after 222.1357ms - 404
+[20:10:07 INF] End processing HTTP request after 225.1795ms - 404
+[20:10:07 INF] [Request] GET /api/GetPrice/siPhone%2015 responded 200 in 255ms
+[20:10:19 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:19 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[20:10:19 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:19 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[20:10:19 INF] Received HTTP response headers after 211.5982ms - 200
+[20:10:19 INF] End processing HTTP request after 214.0981ms - 200
+[20:10:19 INF] Received HTTP response headers after 212.1404ms - 200
+[20:10:19 INF] End processing HTTP request after 214.3623ms - 200
+[20:10:19 INF] [Request] GET /api/GetPrice/iPhone%2015 responded 200 in 240ms
+[20:10:46 INF] Now listening on: http://localhost:5208
+[20:10:46 INF] Application started. Press Ctrl+C to shut down.
+[20:10:46 INF] Hosting environment: Development
+[20:10:46 INF] Content root path: D:\Source\repos\Tests\net core\Sadas test

@@ -1,0 +1,9 @@
+@Sadas test_HostAddress = http://localhost:5208
+@Sadas_test_HostAddress = http://localhost:5208
+
+
+
+@ProdactName=iPhone 15
+GET {{Sadas_test_HostAddress}}/api/getprice/{{ProdactName}}
+
+###
