@@ -1,19 +1,13 @@
-﻿using System.Runtime.CompilerServices;
+﻿using Sadas_test.Models.DTOs;
+using System.Runtime.CompilerServices;
 
 namespace Sadas_test.Services.Interfaces
 {
-    public interface IApiSource
-    {
-        string Name { get; set; }
-        string ApiUrl { get; set; }
-        int NumParameters { get; set; }
-        string ParametersMagicStr { get; set; } 
- 
-    }
+  
 
     public interface IPriceSourcesService
     {
-        Task<IEnumerable<IApiSource>> GetAllSourcesAsync();
+        Task<IEnumerable<ProductSourceDto>> GetAllSourcesAsync();
 
         Task<int> CountSourcesAsync();
 

@@ -239,3 +239,25 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5208: address 
 [21:38:03 INF] End processing HTTP request after 723.8057ms - 200
 [21:38:03 INF] End processing HTTP request after 848.7539ms - 200
 [21:38:03 INF] [Request] GET /api/getprice/iPhone%2015 responded 200 in 1098ms
+[22:17:31 INF] Now listening on: http://localhost:5208
+[22:17:31 INF] Application started. Press Ctrl+C to shut down.
+[22:17:31 INF] Hosting environment: Development
+[22:17:31 INF] Content root path: D:\Source\repos\Tests\net core\Sadas test
+[22:17:39 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[22:17:39 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[22:17:39 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[22:17:39 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[22:17:40 INF] Received HTTP response headers after 789.9557ms - 200
+[22:17:40 INF] Received HTTP response headers after 678.7264ms - 200
+[22:17:40 INF] End processing HTTP request after 798.6292ms - 200
+[22:17:40 INF] End processing HTTP request after 684.4015ms - 200
+[22:17:40 INF] [Request] GET /api/getprice/iPhone%2015 responded 200 in 1065ms
+[22:17:41 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[22:17:41 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices1?*
+[22:17:41 INF] Start processing HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[22:17:41 INF] Sending HTTP request GET https://6827553f6b7628c5290ff5cd.mockapi.io/api/v1/prices2?*
+[22:17:41 INF] Received HTTP response headers after 207.8616ms - 200
+[22:17:41 INF] End processing HTTP request after 209.8705ms - 200
+[22:17:41 INF] Received HTTP response headers after 217.0523ms - 200
+[22:17:41 INF] End processing HTTP request after 218.9829ms - 200
+[22:17:41 INF] [Request] GET /api/getprice/iPhone%2015 responded 200 in 244ms

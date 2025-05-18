@@ -10,7 +10,7 @@ namespace Sadas_test.Services.Implementations
     public class PriceSourcesService : IPriceSourcesService
     {
         private readonly HttpClient _httpClient;
-        private readonly List<IApiSource> _sources = new();
+        private readonly List<ProductSourceDto> _sources = new();
 
         public PriceSourcesService(HttpClient httpClient, IOptions<List<ProductSourceDto>> config)
         {
@@ -18,19 +18,13 @@ namespace Sadas_test.Services.Implementations
 
             foreach (var dto in config.Value)
             {
-                _sources.Add(new PriceApiSource
-                {
-                    Name = dto.SourceName,
-                    ApiUrl = dto.ApiUrl,
-                    NumParameters = dto.NumParameters,
-                    ParametersMagicStr = dto.ParametersMagicStr,
-                });
+                _sources.Add(dto);
             }
         }
 
-        public Task<IEnumerable<IApiSource>> GetAllSourcesAsync()
+        public Task<IEnumerable<ProductSourceDto>> GetAllSourcesAsync()
         {
-            return Task.FromResult<IEnumerable<IApiSource>>(_sources);
+            return Task.FromResult<IEnumerable<ProductSourceDto>>(_sources);
         }
 
         public Task<int> CountSourcesAsync()
@@ -59,7 +53,7 @@ namespace Sadas_test.Services.Implementations
                     // try known paths (in real case should come from DTO)
                     decimal price = ExtractPrice(root);
 
-                    return (source.Name, price);
+                    return (source.SourceName, price);
                 }
                 catch
                 {
